@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/淡灰色" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/df2_cityLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:drawableRight="@drawable/sy_icn_solid_drop_menu"
+                android:gravity="center"
+                android:text="重庆市 "
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.1dp"
+            android:layout_height="20dp"
+            android:background="@color/淡灰色" />
+
+        <LinearLayout
+            android:id="@+id/df2_lifeLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/sy_icn_solid_drop_menu"
+                android:gravity="center"
+                android:text="生活大件 "
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.1dp"
+            android:layout_height="20dp"
+            android:background="@color/淡灰色" />
+
+        <LinearLayout
+            android:id="@+id/df2_rankLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/sy_icn_solid_drop_menu"
+                android:gravity="center"
+                android:text="排序 "
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.1dp"
+            android:layout_height="20dp"
+            android:background="@color/淡灰色" />
+
+        <LinearLayout
+            android:id="@+id/df2_screenLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/sy_icn_solid_drop_menu"
+                android:gravity="center"
+                android:text="筛选 "
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/淡灰色" />
+</LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/df2_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+      android:divider="@color/三c"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

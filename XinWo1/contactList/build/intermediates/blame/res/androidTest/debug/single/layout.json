@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\recent_city.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\recent_city.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\total_item.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\total_item.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\overlay1.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\overlay1.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_city.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\item_city.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\frist_list_item.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\frist_list_item.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\list_item.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\overlay.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\overlay.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\contactList\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main.xml",
+        "source": "F:\\XinWo1\\contactList\\build\\intermediates\\bundles\\debug\\res\\layout\\main.xml"
+    }
+]

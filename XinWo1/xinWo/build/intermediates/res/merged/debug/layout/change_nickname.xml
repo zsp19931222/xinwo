@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:id="@+id/change_nickname_Lin"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             android:id="@+id/change_nickname_returnRel"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人资料"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg" />
+<LinearLayout 
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView 
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称："
+        android:textColor="@color/黑字体色"
+        android:textSize="14sp"/>
+    <EditText 
+        android:id="@+id/change_nickname_edit"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="请输入新昵称"
+        android:textSize="14sp"
+        android:background="@null"/>
+    <LinearLayout 
+    android:layout_width="50dp"
+       android:id="@+id/change_nickname_deleteLin"
+    android:layout_height="50dp"
+    android:gravity="center">
+        <Button
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/cha" />
+        </LinearLayout>
+</LinearLayout>
+<TextView 
+        android:textColor="@color/淡灰色"
+        android:padding="@dimen/超小字体"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="名字由4-20位中英文、数字、“-”、“_”组成"/>
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg" />
+
+<Button
+                android:id="@+id/change_nickname_exitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="确定"
+                android:background="@drawable/publicbtn_selector_bg"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+</LinearLayout>

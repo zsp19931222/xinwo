@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/city_wide_cityBgRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/淡灰色" >
+
+        <RelativeLayout
+            android:id="@+id/city_wide_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="50dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sp_return"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/city_wide_EdLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_wide_returnRel"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/city_search_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/city_search_icn" />
+
+            <TextView
+                android:id="@+id/city_wide_Ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="请输入关键字"
+                android:textColor="@color/white"
+                android:textSize="@dimen/小字体" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/city_wide_cityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_wide_EdLin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="3dp"
+            android:text="定位中"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/city_wide_cityPinyinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_wide_cityText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/中字体" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <com.quwu.xinwo.mywight.MyViewPager
+            android:id="@+id/city_wide_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" >
+        </com.quwu.xinwo.mywight.MyViewPager>
+
+        <LinearLayout
+            android:id="@+id/city_wide_iconLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/city_wide_vp_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/point_pre" />
+
+            <ImageView
+                android:id="@+id/city_wide_vp_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/point_mor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/city_wide_layout1"
+        android:layout_marginTop="10dp"
+        layout="@layout/city_wide_layout" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.quwu.xinwo.mywight.MyListView
+            android:id="@+id/city_wide_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:divider="@color/white"
+            android:dividerHeight="1dp" >
+        </com.quwu.xinwo.mywight.MyListView>
+        <TextView 
+            android:id="@+id/city_wide_noDataText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="没有查询到相关数据哦~"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体"
+            />
+        </RelativeLayout>
+</LinearLayout>

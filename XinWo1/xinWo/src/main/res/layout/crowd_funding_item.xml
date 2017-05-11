@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp" >
+
+    <HorizontalScrollView
+        android:id="@+id/crowd_funding_item_hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+
+            <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/crowd_funding_item_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="auto_fit"
+                android:listSelector="@color/透明"
+                android:scrollbars="none"
+                android:stretchMode="spacingWidthUniform" >
+            </com.quwu.xinwo.mywight.MyGridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/crowd_funding_item_goods_nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crowd_funding_item_hsv"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="商品名称"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/大字体" />
+
+    <TextView
+        android:id="@+id/crowd_funding_item_goods_describeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crowd_funding_item_goods_nameText"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="商品名称"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体" />
+
+    <TextView
+        android:id="@+id/crowd_funding_item_area_timeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crowd_funding_item_goods_describeText"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="1小时前\t\t重庆 渝北区"
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/小字体" />
+
+    <com.quwu.xinwo.mywight.TextProgressBar
+        android:id="@+id/crowd_funding_item_Bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="130dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/crowd_funding_item_area_timeText"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/colourful_progressbar1" />
+
+    <TextView
+        android:id="@+id/crowd_funding_item_RMBText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crowd_funding_item_area_timeText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/crowd_funding_item_Bar"
+        android:text="¥"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/小字体" />
+
+    <TextView
+        android:id="@+id/crowd_funding_item_priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crowd_funding_item_area_timeText"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/crowd_funding_item_RMBText"
+        android:text="258"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/大字体" />
+
+    <TextView
+        android:id="@+id/crowd_funding_item_residueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crowd_funding_item_area_timeText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/crowd_funding_item_priceText"
+        android:text="剩余：72"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/小字体" />
+
+    <Button
+        android:id="@+id/crowd_funding_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/crowd_funding_item_goods_describeText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/publicbtn_selector_bg"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/more_single_white"
+        android:padding="5dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:text="我要抢"
+        android:textColor="@color/white"
+        android:textSize="@dimen/小字体" />
+
+</RelativeLayout>

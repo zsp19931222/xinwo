@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/search_returnRel"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/search_Ed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:hint="请输入关键字"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <RelativeLayout
+            android:id="@+id/search_Rel"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:id="@+id/search_searchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_selector_bg"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="搜索"
+                android:textColor="#FF8A41" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        
+        <LinearLayout 
+            android:id="@+id/search_hotLin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="热门"
+                android:textColor="@color/黑字体色"
+                android:textSize="@dimen/大字体" />
+
+        <!--      <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/search_gridview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:stretchMode="spacingWidthUniform" >
+            </com.quwu.xinwo.mywight.MyGridView>
+-->
+            <LinearLayout
+                android:id="@+id/search_Lin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/search_latelyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:text="最近搜索"
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/小字体" />
+<ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+        <LinearLayout 
+            android:id="@+id/search_latelyLin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <com.quwu.xinwo.mywight.MyListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@color/bg"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" >
+   </com.quwu.xinwo.mywight.MyListView>
+    </LinearLayout>
+    </ScrollView>
+    <Button
+            android:id="@+id/search_clearBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/publicbtn_selector_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="清空历史记录"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sh"
+        android:layout_marginTop="7dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</RelativeLayout>
+</LinearLayout>

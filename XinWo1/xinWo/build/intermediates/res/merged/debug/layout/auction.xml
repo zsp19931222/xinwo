@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quwu.xinwo.pull.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auction_parent_layout"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+   <include layout="@layout/refresh_head" />
+
+    <com.quwu.xinwo.pull.PullableScrollView
+        android:id="@+id/auction_scrollView "
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/auction_layout" />
+
+            <include
+                android:id="@+id/auction_layout2"
+                layout="@layout/city_wide_layout" />
+        </FrameLayout>
+    </com.quwu.xinwo.pull.PullableScrollView>
+
+    <include
+        layout="@layout/load_more"
+        />
+</com.quwu.xinwo.pull.PullToRefreshLayout>

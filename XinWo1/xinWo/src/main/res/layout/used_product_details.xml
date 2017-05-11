@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/udd_Rel"
+    android:background="@color/white" >
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/home_page_product_details_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none" >
+
+        <include layout="@layout/used_product_details_layout" />
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <RelativeLayout
+            android:id="@+id/hp_dp_returnRel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sp_return"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/udd_moreRel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/goods_details_whitemore" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/udd_bottomLin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/returnbtn_selector_bg"
+            android:drawableTop="@drawable/goods_delatils_like"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="关注999+"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/超小字体" />
+<ImageView 
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@color/bg"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/returnbtn_selector_bg"
+            android:drawableTop="@drawable/icn_car"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="讨价还价"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/publicbtn_selector_bg1"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/大字体" />
+    </LinearLayout>
+<ImageView 
+    android:layout_above="@id/udd_bottomLin"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/bg"/>
+</RelativeLayout>

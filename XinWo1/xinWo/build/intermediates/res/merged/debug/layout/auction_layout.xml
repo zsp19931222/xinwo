@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/auction_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="心窝拍卖会"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+    <ImageView 
+        android:scaleType="fitXY"
+        android:id="@+id/auction_iamge"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c" />
+    <include 
+        android:id="@+id/auction_layout1"
+        layout="@layout/city_wide_layout"/>
+     <com.quwu.xinwo.mywight.MyListView
+        android:id="@+id/auction_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/bg"
+        android:dividerHeight="1dp" >
+    </com.quwu.xinwo.mywight.MyListView>
+</LinearLayout>

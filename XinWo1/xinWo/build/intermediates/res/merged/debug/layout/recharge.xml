@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/recharge_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/recharge_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="请选择充值金额（元）"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/recharge_box1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/recharge_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="20元"
+                    android:textColor="@drawable/recharge_selector_ziti"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/recharge_box2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recharge_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="50元"
+                    android:textColor="@drawable/recharge_selector_ziti"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/recharge_box3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recharge_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="100元"
+                    android:textColor="@drawable/recharge_selector_ziti"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/recharge_box4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/recharge_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="200元"
+                    android:textColor="@drawable/recharge_selector_ziti"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/recharge_box5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recharge_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="500元"
+                    android:textColor="@drawable/recharge_selector_ziti"
+                    android:textSize="12sp" />
+
+                <EditText
+                     android:id="@+id/recharge_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recharge_selector"
+                    android:gravity="center"
+                    android:hint="其他金额"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="选择支付方式"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+<Button 
+        android:id="@+id/recharge_pay_wayBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+               android:background="@drawable/returnbtn_selector_bg" 
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/黑字体色"
+                android:drawablePadding="5dp"
+                android:textSize="@dimen/中字体"
+                android:drawableLeft="@drawable/qd_icn_weichat"
+                android:text="微信支付"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/icon_more"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp" />
+<Button 
+        android:id="@+id/recharge_pay_wayBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                 android:drawablePadding="5dp"
+               android:background="@drawable/returnbtn_selector_bg" 
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/黑字体色"
+                android:textSize="@dimen/中字体"
+                android:drawableLeft="@drawable/qd_icn_bank"
+                android:text="银行卡"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/icon_more"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp" />
+<Button 
+        android:id="@+id/recharge_pay_wayBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+               android:background="@drawable/returnbtn_selector_bg" 
+                android:paddingBottom="10dp"
+                 android:drawablePadding="5dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/黑字体色"
+                android:textSize="@dimen/中字体"
+                android:drawableLeft="@drawable/qd_icn_alipay"
+                android:text="支付宝支付"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/icon_more"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <Button
+            android:id="@+id/recharge_confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/publicbtn_selector_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

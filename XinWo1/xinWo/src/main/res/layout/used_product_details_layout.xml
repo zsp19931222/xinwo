@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/hp_pd_ViewpagerRel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+         >
+
+        <com.quwu.xinwo.mywight.MyViewPager
+            android:id="@+id/hp_pd_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.quwu.xinwo.mywight.MyViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/home_page_product_details_point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/goods_details_point_yellow" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home_page_product_details_point11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/goods_details_point_white" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/goods_details_share" />
+    </RelativeLayout>
+
+
+        <com.quwu.xinwo.mywight.CircleImageView
+             android:layout_below="@id/hp_pd_ViewpagerRel"
+            android:id="@+id/hp_pd_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/a1" />
+<TextView 
+    android:id="@+id/udd_priceText"
+    android:layout_width="wrap_content"
+    android:text="258"
+    android:textColor="@color/淡红色"
+    android:textSize="@dimen/大字体"
+    android:layout_alignParentRight="true"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="16dp"
+    android:layout_alignBottom="@id/hp_pd_image"/>
+<TextView 
+    android:layout_toLeftOf="@id/udd_priceText"
+    android:layout_width="wrap_content"
+    android:text="¥"
+    android:textColor="@color/淡红色"
+    android:textSize="@dimen/小字体"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/hp_pd_image"/>
+
+        <TextView
+            android:id="@+id/hp_pd_userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/common_rank1"
+            android:text="用户名"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/小字体" />
+
+        <ImageView
+            android:id="@+id/hp_pd_tuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_userNameText"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/goods_details_tu" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/hp_pd_tuImage"
+            android:background="@color/三c" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/hp_pd_tuImage"
+            android:layout_toRightOf="@id/hp_pd_tuImage"
+            android:background="@color/三c" />
+
+
+        <TextView
+            android:id="@+id/hp_pd_residueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/hp_pd_userNameText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="999+浏览"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/hp_pd_goods_nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_tuImage"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="商品名称"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+            android:id="@+id/hp_pd_goods_describeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_goods_nameText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="商品描述"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <Button
+            android:id="@+id/hp_pd_voiceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_goods_describeText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/fb_icn_sound"
+            android:gravity="bottom"
+            android:text="60s"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/hp_pd_area_timeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_voiceBtn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/fb_icn_local"
+            android:gravity="bottom"
+            android:text="  重庆\t渝北区\t\t发布时间：两天前"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/巨小字体" />
+
+        <HorizontalScrollView
+            android:id="@+id/hp_pd_hs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_area_timeText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="正常使用"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="保修期内"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="无拆无损"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="全新商品"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="来源京东"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="大陆行货"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+
+                <TextView
+                    android:id="@+id/hp_pd_safeguardText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/goods_details_yes"
+                    android:text="可自提"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/巨小字体" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/icn_guaranteeRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_pd_hs"
+            android:layout_marginTop="10dp"
+            android:background="#E6EED7"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/icn_guarantee"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icn_guarantee" />
+            <TextView 
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/黑字体色"
+                android:textSize="@dimen/小字体"
+                android:layout_toRightOf="@id/icn_guarantee"
+                android:text="请勿使用心窝担保交易以外的交易方式"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_more" />
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/hp_pd_participationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高出价"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/icn_guaranteeRel"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体"/>
+        <com.quwu.xinwo.mywight.CircleImageView
+            android:layout_toRightOf="@id/hp_pd_participationText"
+            android:id="@+id/udd_bidder_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+              android:layout_below="@id/icn_guaranteeRel"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/a1" />
+        <TextView 
+            android:id="@+id/udd_bid_moneyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/udd_bidder_image"
+            android:layout_below="@id/icn_guaranteeRel"
+            android:textColor="@color/淡红色"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/大字体"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80"
+            android:layout_toRightOf="@id/udd_bid_moneyText"
+            android:layout_alignBottom="@id/udd_bid_moneyText"
+            android:textColor="@color/淡红色"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/大字体"
+            />
+   <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共1人出价"
+            android:layout_marginRight="16dp"
+            android:layout_alignBottom="@id/udd_bid_moneyText"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/lanse"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/大字体"
+            />
+        <ImageView 
+            android:id="@+id/hp_pd_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/三c"
+            android:layout_below="@id/hp_pd_participationText"/>
+        <com.quwu.xinwo.mywight.MyListView 
+            android:layout_below="@id/hp_pd_line"
+            android:id="@+id/hp_pd_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg"
+            android:dividerHeight="0.5dp"
+            android:background="@color/white"/>
+       <TextView 
+           android:id="@+id/hp_pd_more"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="查看更多"
+           android:layout_below="@id/hp_pd_listview"
+           android:textColor="@color/lanse"
+           android:textSize="@dimen/巨大字体"
+           android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

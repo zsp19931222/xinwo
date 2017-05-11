@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/city_wide_gridview_item_Lin"
+    android:orientation="vertical" >
+    <CheckBox
+        android:id="@+id/city_wide_gridview_item_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/city_wide_screen_checkbox1"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="大陆行货"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+</LinearLayout>

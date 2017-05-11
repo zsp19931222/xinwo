@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quwu.xinwo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 用于调用 JNI -->
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.quwu.meiriyiyuan.permission.JPUSH_MESSAGE" />
+    <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-sdk android:maxSdkVersion="25"/>
+
+    <application
+        android:name="com.quwu.xinwo.global.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="LWhWZzvNAad80SFOifQg6zvP2Z1wbdOe" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.quwu.xinwo.global.StartActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.quwu.xinwo.main.Main_Activity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- 我的相关界面 -->
+        <activity
+            android:name="com.quwu.xinwo.mine.Mine_NewsActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Mine_System_MessageActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Mine_Other_NewsActivitiy"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Mine_leave_MessageActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Mine_SettingActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.About_USActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Help_CenterActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Personal_CenterActvity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Personal_DataActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Fill_In_InformationActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.RechargeActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.My_OrderActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Goods_After_SaleActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.My_RedpacketActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.After_SaleActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.WelfareActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.CooperationActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.RecommActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.AccountActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Account_ManagementActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Account_DetailActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Add_AccountActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Add_BankCardActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Bind_AlipayActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.WithdrawActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.My_ReleaseActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Off_The_ShelfActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.popupwindow.My_Release_Pop"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.quwu.xinwo.mine.My_SaleActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.My_AttentionActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.UnderwayActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.AnnounceActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Lucky_RecordActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Deal_RecordActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Change_NickeNameActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Binding_PhoneNumActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Change_Bind_PhoneNumActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Add_Shipping_AddressActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Manage_Shipping_AddressActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.IntroduceActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Identity_AuthenticationActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.FeedBackActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Change_SexActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.quwu.xinwo.mine.ShareActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Wipe_CacheActivity"
+            android:theme="@style/TooltipStyle" />
+        <activity
+            android:name="com.quwu.xinwo.mine.Goods_After_DissagreeActivity"
+            android:theme="@style/TooltipStyle" />
+        <!-- 发布相关界面 -->
+        <activity
+            android:name="com.quwu.xinwo.release.Area_selection1Activity"
+            android:theme="@style/TooltipStyle" />
+        <activity
+            android:name="com.quwu.xinwo.release.Release_Activity"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- 处理一进页面弹出输入框 -->
+        <activity
+            android:name="com.quwu.xinwo.release.Goods_CategoryActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name="com.quwu.xinwo.newphoto.MainActivity" />
+        <activity android:name="com.quwu.xinwo.release.VideoActivitiy" />
+        <activity
+            android:name="com.quwu.xinwo.release.VideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.quwu.xinwo.release.KeyBoardActivity"
+            android:theme="@style/KeyBoardStyle"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 头像相关界面 -->
+        <activity android:name="com.quwu.xinwo.cropimage.CropImage" />
+        <activity android:name="com.quwu.xinwo.cropimage.MonitoredActivity" />
+        <!-- 首页相关页面 -->
+        <activity
+            android:name="com.quwu.xinwo.home_page.AreaActivity"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.SearchActivity"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.City_WideActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.DigitalActivity"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.City_Wide_Vp_ClassesActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.Crowd_FundingActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.RentActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.AuctionActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.Free_DeliveryActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.QCActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.home_page.ChoicenessActivity"
+            android:theme="@style/Theme.Transparent" />
+        <!-- 商品详情相关页面 -->
+        <activity
+            android:name="com.quwu.xinwo.product_details.Crowdfunding_Product_DetailsActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.product_details.All_price_Product_DetailsActivity"
+            android:theme="@style/Theme.Transparent" />
+        <!-- 登录注册相关页面 -->
+        <activity
+            android:name="com.quwu.xinwo.log_in.LoginActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.log_in.ForgetPasswardActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.log_in.Reset_PasswordActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.quwu.xinwo.log_in.RegisterActivity"
+            android:theme="@style/Theme.Transparent" />
+        <!-- 网页相关页面 -->
+        <activity
+            android:name="com.quwu.xinwo.webpage.WebPage"
+            android:theme="@style/Theme.Transparent" />
+        <!-- 启动相关页面 -->
+        <activity android:name="com.quwu.xinwo.global.AdvertisementActivity" />
+        
+        
+        <activity
+            android:name="com.quwu.xinwo.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Transparent"  />
+        <!-- 授权认证 -->
+        <activity android:name="com.quwu.weibo.activity.WBAuthActivity" />
+        <activity android:name="com.quwu.weibo.activity.WBAuthCodeActivity" />
+        <activity android:name="com.quwu.weibo.activity.WBShareMainActivity" />
+        <!-- 社会化组件 -->
+        <activity android:name="com.sina.weibo.sdk.demo.WBSocialActivity" />
+        <!-- OpenAPI -->
+        <activity android:name=".openapi.WBOpenAPIActivity" />
+        <activity android:name=".openapi.WBUserAPIActivity" />
+        <activity android:name=".openapi.WBStatusAPIActivity" />
+        <activity android:name=".openapi.WBCommentAPIActivity" />
+        <activity android:name=".openapi.WBInviteAPIActivity" />
+        <activity android:name=".openapi.WBLogoutAPIActivity" />
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        
+         <!-- 腾讯 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105725578" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.quwu.alipay.PayDemoActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/area_switchover_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地区选择"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="关闭"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+
+    <com.quwu.xinwo.sortlistview.ClearEditText
+        android:id="@+id/area_switchover_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sy_icn_search"
+        android:hint="请输入城市名或城市首字母"
+        android:paddingRight="5dp"
+        android:textColor="@color/黑字体色"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/三c" />
+
+            <RelativeLayout
+                android:id="@+id/area_switchover_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp" >
+
+                <TextView
+                    android:id="@+id/area_switchover_nowCiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="当前城市："
+                    android:textColor="@color/淡灰色"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/area_switchover_nowCiteText"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="重庆"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(GPS定位)"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/三c" />
+<LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:text="历史访问"
+                                    android:textColor="@color/淡灰色"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:background="@color/三c" />
+                            </LinearLayout>
+
+                            <com.quwu.xinwo.mywight.MyGridView
+                                android:id="@+id/area_switchover_gridview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:listSelector="#00000000"
+                                android:numColumns="3" >
+                            </com.quwu.xinwo.mywight.MyGridView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ScrollView
+                    android:id="@+id/area_switchover_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none" >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            
+
+                        </LinearLayout>
+                </ScrollView>
+                            <ListView
+                                android:id="@+id/area_switchover_listview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:divider="@null" >
+                         </ListView>
+
+                <TextView
+                    android:id="@+id/dialog"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:background="@drawable/show_head_toast_bg"
+                    android:gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="30.0dip"
+                    android:visibility="invisible" />
+                     <com.quwu.xinwo.sortlistview.SideBar
+                            android:id="@+id/area_switchover_sideBar"
+                            android:layout_width="30.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right|center" >
+                        </com.quwu.xinwo.sortlistview.SideBar>
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/area_switchover_returntop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/tabhost_return_btn"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

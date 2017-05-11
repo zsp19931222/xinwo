@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/feedback_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/淡灰色"
+    android:layout_marginLeft="@dimen/marginSixteen"
+    android:layout_marginTop="@dimen/marginSixteen"
+    android:layout_marginBottom="@dimen/marginFive"
+    android:textSize="@dimen/中字体"
+    android:text="问题和意见"/>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <EditText 
+        android:id="@+id/feedback_questionEd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="请简要描述你的问题和意见"
+        android:textColor="@color/淡灰色"
+        android:gravity="top"
+        android:background="@null"
+        android:paddingLeft="@dimen/marginSixteen"
+        android:paddingTop="@dimen/marginFive"
+        android:paddingRight="@dimen/marginSixteen"
+        android:paddingBottom="@dimen/marginFive"
+        android:textSize="@dimen/中字体"/>
+    <TextView 
+        android:id="@+id/feedback_questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/100"
+        android:textColor="@color/淡灰色"
+        android:layout_marginRight="@dimen/marginSixteen"
+        android:textSize="@dimen/小字体"
+        android:gravity="right"/>
+</LinearLayout>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/淡灰色"
+    android:layout_marginLeft="@dimen/marginSixteen"
+    android:layout_marginTop="@dimen/marginSixteen"
+    android:layout_marginBottom="@dimen/marginFive"
+    android:textSize="@dimen/中字体"
+    android:text="图片（选填，提供问题截图）"/>
+<LinearLayout 
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="120dp"
+    android:paddingLeft="@dimen/marginSixteen"
+    android:paddingRight="@dimen/marginSixteen"
+    android:paddingTop="@dimen/marginFive"
+    android:paddingBottom="@dimen/marginFive"
+    android:orientation="horizontal">
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedback_addpic"/>
+</LinearLayout>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/淡灰色"
+    android:layout_marginLeft="@dimen/marginSixteen"
+    android:layout_marginTop="@dimen/marginSixteen"
+    android:layout_marginBottom="@dimen/marginFive"
+    android:textSize="@dimen/中字体"
+    android:text="个人邮箱"/>
+<EditText 
+    android:id="@+id/feedback_emailEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请填写您的邮箱以便及时收到反馈信息"
+        android:textColor="@color/淡灰色"
+        android:gravity="top"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/marginSixteen"
+        android:paddingTop="@dimen/marginFive"
+        android:paddingRight="@dimen/marginSixteen"
+        android:paddingBottom="@dimen/marginFive"
+        android:textSize="@dimen/中字体"/>
+<Button
+        android:id="@+id/feedback_comfirBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/publicbtn_selector_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

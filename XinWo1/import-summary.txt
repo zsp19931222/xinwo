@@ -1,0 +1,151 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From ContactList:
+* proguard.cfg
+From PullToRefresh_Lib_XinWo:
+* LICENSE
+* build.gradle
+* pom.xml
+From SwipeRefreshLoadListview:
+* ic_launcher-web.png
+* proguard-project.txt
+From WeiboSDK:
+* proguard-project.txt
+From XinWo:
+* head_set_choice.xml
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ContactList:
+* AndroidManifest.xml => contactList\src\main\AndroidManifest.xml
+* assets\ => contactList\src\main\assets\
+* libs\pinyin4android1.0.jar => contactList\libs\pinyin4android1.0.jar
+* libs\pinyin4j-2.5.0.jar => contactList\libs\pinyin4j-2.5.0.jar
+* lint.xml => contactList\lint.xml
+* res\ => contactList\src\main\res\
+* src\ => contactList\src\main\java\
+In PullToRefresh_Lib_XinWo:
+* AndroidManifest.xml => pullToRefresh_Lib_XinWo\src\main\AndroidManifest.xml
+* assets\ => pullToRefresh_Lib_XinWo\src\main\assets
+* lint.xml => pullToRefresh_Lib_XinWo\lint.xml
+* res\ => pullToRefresh_Lib_XinWo\src\main\res\
+* src\ => pullToRefresh_Lib_XinWo\src\main\java\
+In SwipeRefreshLoadListview:
+* AndroidManifest.xml => swipeRefreshLoadListview\src\main\AndroidManifest.xml
+* assets\ => swipeRefreshLoadListview\src\main\assets
+* lint.xml => swipeRefreshLoadListview\lint.xml
+* res\ => swipeRefreshLoadListview\src\main\res\
+* src\ => swipeRefreshLoadListview\src\main\java\
+In WeiboSDK:
+* AndroidManifest.xml => weiboSDK\src\main\AndroidManifest.xml
+* assets\ => weiboSDK\src\main\assets
+* libs\weiboSDKCore_3.1.2.jar => weiboSDK\libs\weiboSDKCore_3.1.2.jar
+* lint.xml => weiboSDK\lint.xml
+* res\ => weiboSDK\src\main\res\
+* src\ => weiboSDK\src\main\java\
+In XinWo:
+* AndroidManifest.xml => xinWo\src\main\AndroidManifest.xml
+* assets\ => xinWo\src\main\assets\
+* libs\apache-mime4j-0.6.jar => xinWo\libs\apache-mime4j-0.6.jar
+* libs\arm64-v8a\libBaiduMapSDK_base_v4_0_0.so => xinWo\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_base_v4_0_0.so
+* libs\arm64-v8a\libBaiduMapSDK_map_v4_0_0.so => xinWo\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_map_v4_0_0.so
+* libs\arm64-v8a\libBaiduMapSDK_util_v4_0_0.so => xinWo\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_util_v4_0_0.so
+* libs\arm64-v8a\liblocSDK7.so => xinWo\src\main\jniLibs\arm64-v8a\liblocSDK7.so
+* libs\armeabi-v7a\libentryexstd.so => xinWo\src\main\jniLibs\armeabi-v7a\libentryexstd.so
+* libs\armeabi-v7a\libjpush210.so => xinWo\src\main\jniLibs\armeabi-v7a\libjpush210.so
+* libs\armeabi-v7a\libweibosdkcore.so => xinWo\src\main\jniLibs\armeabi-v7a\libweibosdkcore.so
+* libs\armeabi\libBaiduMapSDK_base_v4_0_0.so => xinWo\src\main\jniLibs\armeabi\libBaiduMapSDK_base_v4_0_0.so
+* libs\armeabi\libBaiduMapSDK_map_v4_0_0.so => xinWo\src\main\jniLibs\armeabi\libBaiduMapSDK_map_v4_0_0.so
+* libs\armeabi\libBaiduMapSDK_util_v4_0_0.so => xinWo\src\main\jniLibs\armeabi\libBaiduMapSDK_util_v4_0_0.so
+* libs\armeabi\liblocSDK7.so => xinWo\src\main\jniLibs\armeabi\liblocSDK7.so
+* libs\BaiduLBS_Android.jar => xinWo\libs\BaiduLBS_Android.jar
+* libs\httpmime-4.0.jar => xinWo\libs\httpmime-4.0.jar
+* libs\jpush-android-2.1.0.jar => xinWo\libs\jpush-android-2.1.0.jar
+* libs\libammsdk.jar => xinWo\libs\libammsdk.jar
+* libs\mips64\libentryexstd.so => xinWo\src\main\jniLibs\mips64\libentryexstd.so
+* libs\mips64\libjpush210.so => xinWo\src\main\jniLibs\mips64\libjpush210.so
+* libs\mips64\libweibosdkcore.so => xinWo\src\main\jniLibs\mips64\libweibosdkcore.so
+* libs\mips\libentryexstd.so => xinWo\src\main\jniLibs\mips\libentryexstd.so
+* libs\mips\libjpush210.so => xinWo\src\main\jniLibs\mips\libjpush210.so
+* libs\mips\libweibosdkcore.so => xinWo\src\main\jniLibs\mips\libweibosdkcore.so
+* libs\mta-sdk-1.6.2.jar => xinWo\libs\mta-sdk-1.6.2.jar
+* libs\nineoldandroids-2.4.0.jar => xinWo\libs\nineoldandroids-2.4.0.jar
+* libs\okhttp-2.5.0.jar => xinWo\libs\okhttp-2.5.0.jar
+* libs\okio-1.6.0.jar => xinWo\libs\okio-1.6.0.jar
+* libs\open_sdk_r5043.jar => xinWo\libs\open_sdk_r5043.jar
+* libs\swipelistview-1.0-20130701.103547-12-jar-with-dependencies.jar => xinWo\libs\swipelistview-1.0-20130701.103547-12-jar-with-dependencies.jar
+* libs\universal-image-loader-1.9.4.jar => xinWo\libs\universal-image-loader-1.9.4.jar
+* libs\user_profile_mtj_1.5.jar => xinWo\libs\user_profile_mtj_1.5.jar
+* libs\x86\libentryexstd.so => xinWo\src\main\jniLibs\x86\libentryexstd.so
+* libs\x86\libjpush210.so => xinWo\src\main\jniLibs\x86\libjpush210.so
+* libs\x86\libweibosdkcore.so => xinWo\src\main\jniLibs\x86\libweibosdkcore.so
+* libs\x86_64\libentryexstd.so => xinWo\src\main\jniLibs\x86_64\libentryexstd.so
+* libs\x86_64\libjpush210.so => xinWo\src\main\jniLibs\x86_64\libjpush210.so
+* libs\x86_64\libweibosdkcore.so => xinWo\src\main\jniLibs\x86_64\libweibosdkcore.so
+* lint.xml => xinWo\lint.xml
+* res\ => xinWo\src\main\res\
+* src\ => xinWo\src\main\java\
+* show_head_toast_bg.9.PNG => show_head_toast_bg.9.png
+* sym_keyboard_left.PNG => sym_keyboard_left.png
+* sym_keyboard_right.PNG => sym_keyboard_right.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

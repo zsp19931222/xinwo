@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/goods_category_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品分类"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+      <com.quwu.xinwo.pinnedheaderexpandable.PinnedHeaderExpandableListView
+        android:id="@+id/explistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0.0dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/bg"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:groupIndicator="@null"
+        android:scrollbars="vertical"
+        android:scrollingCache="true" />
+</LinearLayout>

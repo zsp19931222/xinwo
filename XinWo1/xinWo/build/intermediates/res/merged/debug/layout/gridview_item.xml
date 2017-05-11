@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gridview_item_Text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.5dp"
+        android:background="@drawable/returnbtn_selector_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="123123211"
+        android:textColor="@color/淡灰色"
+        android:textSize="12sp" />
+
+</LinearLayout>

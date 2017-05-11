@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XinWo1.iml" filepath="$PROJECT_DIR$/XinWo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactList/contactList.iml" filepath="$PROJECT_DIR$/contactList/contactList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefresh_Lib_XinWo/pullToRefresh_Lib_XinWo.iml" filepath="$PROJECT_DIR$/pullToRefresh_Lib_XinWo/pullToRefresh_Lib_XinWo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeRefreshLoadListview/swipeRefreshLoadListview.iml" filepath="$PROJECT_DIR$/swipeRefreshLoadListview/swipeRefreshLoadListview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weiboSDK/weiboSDK.iml" filepath="$PROJECT_DIR$/weiboSDK/weiboSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xinWo/xinWo.iml" filepath="$PROJECT_DIR$/xinWo/xinWo.iml" />
+    </modules>
+  </component>
+</project>

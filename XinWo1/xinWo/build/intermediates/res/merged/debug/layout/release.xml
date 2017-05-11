@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/releaseLin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/release_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布商品"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/release_saveBtn"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/returnbtn_selector_bg"
+            android:text="保存"
+            android:textColor="@color/淡红色"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/release_gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10dp"
+                android:numColumns="5"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:verticalSpacing="10dp"
+                >
+            </com.quwu.xinwo.mywight.MyGridView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg" />
+
+            <EditText
+                android:id="@+id/release_titleEd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="商品名称"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg" />
+
+            <EditText
+                android:id="@+id/release_decribeEd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="商品描述"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/release_pleyerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/fb_icn_sound"
+                    android:gravity="bottom"
+                    android:text="0s"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="10sp" />
+
+                <com.quwu.xinwo.mywight.RecordButton
+                    android:id="@+id/release_recordBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/fb_icn_record"
+                    android:text="按住录音"
+                    android:textColor="@color/lanse"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/三c" />
+
+            <Button
+                android:id="@+id/release_areaBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/fb_icn_local"
+                android:text=" 定位中"
+                android:textColor="@color/淡灰色"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <LinearLayout
+                    android:id="@+id/release_cordelesBoxLin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/release_cordelesBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/inventory_item_xuanzhe1"
+                        android:checked="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/inventory_heixianquan"
+                        android:text=" 卖钱"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/中字体" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/release_auctionBoxLin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/release_auctionBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/inventory_item_xuanzhe1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/inventory_heixianquan"
+                        android:text=" 拍卖"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/中字体" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/release_rent_outBoxLin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/release_rent_outBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/inventory_item_xuanzhe1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/inventory_heixianquan"
+                        android:text=" 出租"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/中字体" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/release_freeBoxLin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/release_freeBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/inventory_item_xuanzhe1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/inventory_heixianquan"
+                        android:text=" 免费送"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/中字体" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_classifyLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="分类"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/release_classifyText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="请选择分类"
+                    android:textColor="@color/淡灰色"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg" />
+
+            <LinearLayout
+                android:id="@+id/release_cordelesLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="卖价"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_cordeles_selling_priceEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="模式"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/release_cordeles_Box1Lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" >
+
+                            <CheckBox
+                                android:id="@+id/release_cordeles_Box1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/release_selector"
+                                android:button="@null"
+                                android:checked="true"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="全价出售"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/release_cordeles_Box2Lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" >
+
+                            <CheckBox
+                                android:id="@+id/release_cordeles_Box2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/release_selector"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="众筹出售"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/release_cordeles_questionIamge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fb_icn_wenhao" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_auctionLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="起拍价"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:id="@+id/release_auction_startPriceEd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="¥0"
+                            android:textColor="@color/淡灰色"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="保留价"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_auction_retainPriceEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注：最高报价小于保留价时流拍"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="加价幅度"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_auction_rangeEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注：单次加价为0-200元之间"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="保证金"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_auction_cash_depositEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/release_auction_questionImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fb_icn_wenhao" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_rent_outLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="商品价值"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_rent_out_valueEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="运费"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_rent_out_freightEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="租金"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_rent_out_rentEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/release_rent_out_rent_yearText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/月"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/release_rent_out_rentImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/fb_icn_wenhao" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="租期"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_rent_out_tenancy_termEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/release_rent_out_tenancy_term_yearText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="/月"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/fb_icn_wenhao"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_freeLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="运费"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_free_freightEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:hint="¥0"
+                        android:textColor="@color/淡灰色"
+                        android:textCursorDrawable="@color/黑字体色"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="联系QQ"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/release_free_QQEd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="选填"
+                        android:textColor="@color/淡灰色"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/release_label_box1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="正常使用"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/release_label_box2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="保修期内"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/release_label_box3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="无拆无修"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/release_label_box4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="全新商品"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/release_label_box5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="来源京东"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/release_label_box6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="大陆行货"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/release_label_box7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/release_selector1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="可自提"
+                        android:textColor="@drawable/hp_hot_ziti"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@null"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_free_checkboxLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/release_free_checkboxLin_box1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/release_selector1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="正常使用"
+                    android:textColor="@drawable/hp_hot_ziti"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/release_free_checkboxLin_box2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/release_selector1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="限自提"
+                    android:textColor="@drawable/hp_hot_ziti"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@drawable/hp_hot_ziti"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@null"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/release_confirmBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/publicbtn_selector_bg"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="确定发布"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/keyboard_confirm_selector_bg"
+        android:keyTextColor="@color/黑字体色" />
+
+</LinearLayout>

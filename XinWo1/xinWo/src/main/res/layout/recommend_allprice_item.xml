@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingLeft="1dp"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <ImageView
+            android:id="@+id/recommend_allprice_itemImage"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:background="@color/淡红色" />
+
+        <TextView
+            android:id="@+id/recommend_allprice_item_describeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/半透明"
+            android:padding="5dp"
+            android:text="全新、保修期内、有发票"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recommend_allprice_item_nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="商品名称"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/黑字体色"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:textColor="@color/淡红色"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/recommend_allprice_item_priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textColor="@color/淡红色"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/recommend_allprice_item_Btn"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_style2"
+                android:text="加入清单"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

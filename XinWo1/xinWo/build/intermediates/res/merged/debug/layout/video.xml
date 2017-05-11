@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black" >
+
+        <RelativeLayout
+            android:id="@+id/video_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sp_return"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/video_timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0:05/0:10"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <RelativeLayout
+             android:id="@+id/video_flashRel"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+             >
+
+            <Button
+                android:id="@+id/video_flashBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sp_photoflash"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout  
+        
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1" >  
+  
+        <SurfaceView  
+            android:id="@+id/video_surfaceview"  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent" />  
+    </LinearLayout>  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#434040" >
+
+        <RelativeLayout
+            android:id="@+id/video_deleteRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sp_delete"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/video_changeRel"
+            android:layout_width="50dp"
+        android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+             >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sp_photochange"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/video_confirmRel"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+             >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sp_yes"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button 
+        android:id="@+id/video_playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp_continue"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+</LinearLayout>

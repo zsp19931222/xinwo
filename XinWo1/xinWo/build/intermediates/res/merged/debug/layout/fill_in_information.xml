@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/fii_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="填写信息"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp">
+    <ImageView 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/fii_goods_image"/>
+    <RelativeLayout 
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2.5"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+        <TextView 
+            android:id="@+id/fii_goods_nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textSize="@dimen/中字体"
+            android:textColor="@color/黑字体色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:layout_below="@id/fii_goods_nameText"
+            android:id="@+id/fii_goods_describeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品描述"
+            android:textSize="@dimen/超小字体"
+            android:textColor="@color/黑字体色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:layout_below="@id/fii_goods_describeText"
+            android:id="@+id/fii_goods_priceText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/小字体"
+            android:textColor="@color/淡红色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:id="@+id/fii_goods_priceText2"
+            android:layout_alignBottom="@id/fii_goods_priceText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fii_goods_priceText1"
+            android:text="256"
+            android:textSize="@dimen/大字体"
+            android:textColor="@color/淡红色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:layout_marginTop="10dp"
+            android:id="@+id/fii_areaText"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/fb_icn_local"
+            android:layout_height="wrap_content"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体"
+            android:layout_below="@id/fii_goods_priceText1"
+            android:text=" 重庆\t渝北区"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 联系卖家"
+            android:textColor="@color/lanse"
+            android:gravity="bottom"
+            android:textSize="@dimen/小字体"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/goods_delails_liuyan"
+            android:layout_alignBottom="@id/fii_areaText"/>
+    </RelativeLayout>
+</LinearLayout>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="卖家信息"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="5dp"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/中字体"/>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/黑字体色"
+    android:background="@color/white"
+    android:text="王二娃"
+    android:id="@+id/fii_buyerNameText"
+    android:paddingLeft="16dp"
+     android:textSize="@dimen/中字体"
+    android:paddingTop="5dp"
+    />
+<TextView 
+    android:id="@+id/fii_buyer_phone_numText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/黑字体色"
+    android:background="@color/white"
+    android:textSize="@dimen/中字体"
+    android:text="188888888888"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    />
+<TextView 
+    android:id="@+id/fii_buyer_areaText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/淡灰色"
+    android:textSize="@dimen/小字体"
+    android:background="@color/white"
+    android:text="重庆市渝北区黄泥磅72号"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    />
+<LinearLayout 
+    android:layout_marginTop="80dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物流公司："
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体"/>
+    <EditText 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="请填写物流公司名称"
+        android:textColorHint="@color/淡灰色"
+        android:textColor="@color/黑字体色"
+        android:background="@null"
+        android:textSize="@dimen/中字体"/>
+    <LinearLayout 
+    android:layout_width="50dp"
+       android:id="@+id/change_nickname_deleteLin"
+    android:layout_height="50dp"
+    android:gravity="center">
+        <Button
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/cha" />
+        </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_marginTop="0.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物流单号："
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体"/>
+    <EditText 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="请填写物流单号码"
+        android:textColorHint="@color/淡灰色"
+        android:textColor="@color/黑字体色"
+        android:background="@null"
+        android:textSize="@dimen/中字体"/>
+    <LinearLayout 
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center">
+        <Button
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/cha" />
+        </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买家评价："
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体"/>
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_pre_style2"
+        android:text="坑比"
+        android:textColor="@color/white"/>
+    <Button 
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_pre_style2"
+        android:text="666"
+        android:textColor="@color/white"/>
+</LinearLayout>
+    <Button
+                android:id="@+id/change_nickname_exitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="50dp"
+                android:paddingBottom="10dp"
+                android:text="确定"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/publicbtn_selector_bg"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

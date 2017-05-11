@@ -1,0 +1,628 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <com.quwu.xinwo.mywight.MyViewPager
+                android:id="@+id/hp_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.quwu.xinwo.mywight.MyViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/hp_vp_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/hp_vp_image10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextSwitcher
+                android:id="@+id/hp_TextSwitcher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:inAnimation="@anim/push_up_in"
+                android:outAnimation="@anim/push_up_out"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp" >
+            </TextSwitcher>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/sy_more_guanzhu" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                   android:id="@+id/hp_classesImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hp_classesLin10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/hp_classesImage10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/hp_classesText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp" >
+
+            <com.quwu.xinwo.mywight.MyViewPager
+                android:id="@+id/home_page_prefecture_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" >
+            </com.quwu.xinwo.mywight.MyViewPager>
+            <LinearLayout
+                android:id="@+id/home_page_prefecture_viewpagerLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/home_page_prefecture_viewpager_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goods_details_point_yellow"
+                    />
+
+                <ImageView
+                    android:id="@+id/home_page_prefecture_viewpager_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point_mor"
+                    />
+                </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="众筹好货"
+                android:textColor="@color/黑字体色"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="更多推荐"
+                android:textColor="@color/三c"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp" >
+
+                <com.quwu.xinwo.mywight.MyGridView
+                    android:id="@+id/hp_good_goods_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="none"
+                    android:stretchMode="spacingWidthUniform" >
+                </com.quwu.xinwo.mywight.MyGridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="附近好货"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp" >
+
+            <com.quwu.xinwo.mywight.MyViewPager
+                android:id="@+id/home_page_nearby_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" >
+            </com.quwu.xinwo.mywight.MyViewPager>
+            <LinearLayout
+                android:id="@+id/home_page_nearby_viewpager_Lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/home_page_nearby_viewpager_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goods_details_point_yellow"
+                     />
+
+                <ImageView
+                    android:id="@+id/home_page_nearby_viewpager_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/point_mor"
+                    />
+                </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@drawable/sy_icn_circle_arrow"
+                android:text="附近热门 "
+                android:textColor="@color/黑字体色"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/三c" />
+
+        <include
+            android:id="@+id/home_page_layout1"
+            layout="@layout/home_page_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg" >
+
+            <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/hot_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:horizontalSpacing="16dp"
+                android:numColumns="2"
+                android:verticalSpacing="16dp" >
+            </com.quwu.xinwo.mywight.MyGridView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

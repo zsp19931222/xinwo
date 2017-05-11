@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/city_wide_item_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/city_wide_item_nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="商品名称"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+            android:id="@+id/city_wide_item_describeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="描述"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/小字体" />
+
+        <Button
+            android:id="@+id/city_wide_item_area_timeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/fb_icn_local"
+            android:text=" 重庆 渝北区\t\t10小时前"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/city_wide_item_crowd_fundingLin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/city_wide_item_totalBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fx_total_demand"
+                        android:text="总需：¥"
+                        android:textColor="#FFDA44" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/city_wide_item_residueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|bottom"
+                    android:text="剩余：人次"
+                    android:textColor="@color/淡灰色"
+                    android:textSize="@dimen/小字体" />
+
+                <ProgressBar
+                    android:id="@+id/city_wide_item_Bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:progressDrawable="@drawable/colourful_progressbar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/city_wide_item_overhead_priceText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="¥2582"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/小字体"
+                android:visibility="gone" />
+            <TextView
+                  android:id="@+id/city_wide_item_rentText"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="租金：¥2582\t\t租期：35月"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/小字体"
+                />
+            <TextView
+                android:id="@+id/city_wide_item_auctionText"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="当前价：¥2582\t\t35人参与"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/小字体"
+                />
+            <TextView
+                android:id="@+id/city_wide_item_freeText"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="此商品为免费商品，请等待卖家选择赠送用户"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/小字体"
+                />
+            <TextView
+                android:id="@+id/city_wide_item_likeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/sy_icn_like"
+                android:text="  999+"
+                android:textColor="@color/淡灰色"
+                android:textSize="@dimen/超小字体" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

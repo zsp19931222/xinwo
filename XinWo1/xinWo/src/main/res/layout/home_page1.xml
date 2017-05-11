@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" 
+    >
+    <LinearLayout
+    android:id="@+id/home_page_titleLin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/home_page_areaLin"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/home_page_areaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLength="3"
+                android:focusable="false"
+                android:text="定位中"
+                android:textColor="@color/黑字体色"
+                android:textSize="@dimen/中字体" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/sy_icn_solid_drop_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_page_Ed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/sy_icn_search"
+            android:hint="请输入关键字"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <Button
+            android:id="@+id/home_page_classifyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/sy_icn_sort" />
+    </LinearLayout>
+<com.quwu.xinwo.pull.PullToRefreshLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_page_parent"
+    android:layout_marginBottom="55dp"
+    android:layout_below="@id/home_page_titleLin"
+    >
+
+    <include layout="@layout/refresh_head" />
+
+    <com.quwu.xinwo.pull.PullableScrollView
+        android:id="@+id/home_page_scrollView "
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/home_page" />
+
+            <include
+                android:id="@+id/home_page_layout2"
+                layout="@layout/home_page_layout" />
+        </FrameLayout>
+    </com.quwu.xinwo.pull.PullableScrollView>
+
+    <include layout="@layout/load_more" />
+
+</com.quwu.xinwo.pull.PullToRefreshLayout>
+</RelativeLayout>

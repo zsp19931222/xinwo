@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recommend_fragment2_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:divider="@color/bg"
+        android:dividerHeight="1dp"
+        ptr:ptrShowIndicator="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+<RelativeLayout
+            android:id="@+id/recommend_fragment2_promptRel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/recommend_fragment2_promptText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="当前还没有数据哟~"
+                android:textColor="@color/淡灰色"
+                android:textSize="@dimen/中字体" />
+
+            <Button
+                android:id="@+id/recommend_fragment2_promptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/recommend_fragment2_promptText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cry" />
+        </RelativeLayout>
+</LinearLayout>

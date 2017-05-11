@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_wide_all_popRel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c" />
+    <RelativeLayout
+        android:id="@+id/sh_Rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eef2f2f2"
+        android:padding="16dp"
+        >
+
+        <Button 
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sh_Btn"
+            android:background="@drawable/icon_research"/>
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/sh"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/sh_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:background="@null"
+            android:hint="输入城市名或拼音"
+            android:textColorHint="@color/橘色"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" >
+        </EditText>
+        <ImageView 
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/sh_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/橘色"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sh_Rel"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/三c"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <ListView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sh_Rel"
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_noresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sh_Rel"
+        android:gravity="center"
+         android:background="@color/bg"
+        android:padding="10dp"
+        android:text="抱歉,暂时没有找到相关城市"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.quwu.xinwo.sqlite.MyLetterListView1
+        android:id="@+id/MyLetterListView01"
+        android:layout_width="25dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sh_Rel"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="7dp" />
+
+</RelativeLayout>

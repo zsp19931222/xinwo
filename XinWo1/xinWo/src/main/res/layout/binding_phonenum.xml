@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/binding_phonenumRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="绑定手机号"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTen"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="手机号："
+                android:textColor="@color/黑字体色"
+                android:textSize="@dimen/中字体" />
+
+            <EditText
+                android:id="@+id/binding_phonenum_phoneEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:textSize="@dimen/中字体" />
+
+            <LinearLayout
+                android:id="@+id/binding_phonenum_phoneDeleteLin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="invisible"
+                android:gravity="center" 
+                >
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/cha"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/binding_phonenum_verification_codeEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginSixteen"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:textSize="@dimen/中字体" />
+
+            <LinearLayout
+                android:id="@+id/binding_phonenum_verification_codeDeleteLin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="invisible"
+                android:gravity="center" >
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/cha"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/binding_phonenum_verification_codeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginSixteen"
+                android:text="获取验证码"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/中字体" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/binding_phonenum_confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/publicbtn_selector_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp" >
+
+    <com.quwu.xinwo.mywight.CircleImageView
+        android:id="@+id/pci_userImage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/personal_head_portrait" />
+
+    <TextView
+        android:id="@+id/pci_userNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pci_userImage"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/pci_userImage"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/common_rank1"
+        android:text="用户名"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体" />
+
+    <TextView
+        android:id="@+id/pic_areaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pci_userImage"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/pci_userImage"
+        android:text="1个小时钱\t\t重庆  渝北区"
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/超小字体" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/pic_crowd_fundingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic_areaText"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/pic_areaText"
+        android:text="众筹出售"
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/小字体" />
+
+    <TextView
+     android:visibility="invisible"
+        android:id="@+id/pic_oldPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pci_userNameText"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/中字体" />
+
+    <TextView
+     android:visibility="invisible"
+        android:id="@+id/pic_newPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pci_userNameText"
+        android:layout_toLeftOf="@id/pic_oldPriceText"
+        android:text="2700"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/中字体" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/pic_priceText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pci_userNameText"
+        android:layout_toLeftOf="@id/pic_newPriceText"
+        android:text="¥"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/超小字体" />
+
+    <TextView
+     android:visibility="invisible"
+        android:id="@+id/pic_closeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/pic_newPriceText"
+        android:layout_below="@id/pic_priceText1"
+        android:text="交易关闭"
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/超小字体" />
+
+    <HorizontalScrollView
+        android:id="@+id/pci_hs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_userImage"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/personal_center_iamgeLin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+<!--  
+            <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/pci_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:stretchMode="spacingWidthUniform" >
+            </com.quwu.xinwo.mywight.MyGridView>
+            -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/pci_goodsNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_hs"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="商品名称"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体" />
+
+    <TextView
+        android:id="@+id/pci_goodsDescribeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_goodsNameText"
+        android:drawableRight="@drawable/goods_details_more"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="商品描述"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/小字体" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/pci_rent_outLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_goodsDescribeText"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租金："
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_rent_out_priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2700"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元/月"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="租期："
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_rent_out_timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+            android:id="@+id/pci_rent_out_checkText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/超小字体" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pci_freeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_goodsDescribeText"
+        android:text="正在等待卖家选择"
+        android:textColor="@color/lanse"
+        android:textSize="@dimen/超小字体"
+         />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/pci_auctionLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_goodsDescribeText"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pci_auction_participationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/lanse"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人参与"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="第"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_auction_timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/lanse"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次延时"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="拍卖进行中"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/pci_winerRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pci_goodsDescribeText"
+        android:layout_marginTop="10dp"
+        android:background="#FFF4F4"
+        android:padding="5dp"
+         >
+
+        <com.quwu.xinwo.mywight.CircleImageView
+            android:id="@+id/pci_winerImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/personal_head_portrait" />
+
+        <TextView
+            android:id="@+id/pci_winerNameText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pci_winerImage"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pci_winerImage"
+            android:text="获奖者："
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_winerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pci_winerImage"
+            android:layout_toRightOf="@id/pci_winerNameText1"
+            android:text="获奖者姓名"
+            android:textColor="@color/lanse"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_winer_participationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pci_winerImage"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pci_winerImage"
+            android:text="本次参与：22人次"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_winer_announce_timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pci_winerImage"
+            android:layout_alignParentRight="true"
+            android:text="揭晓时间：2015-10-08  10：28"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_winer_lucknumberText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/pci_winer_announce_timeText"
+            android:layout_alignBottom="@id/pci_winerNameText"
+            android:layout_alignLeft="@id/pci_winer_announce_timeText"
+            android:text="幸运号码："
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/pci_winer_lucknumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pci_winerNameText"
+            android:layout_toRightOf="@id/pci_winer_lucknumberText1"
+            android:text="10086258"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/超小字体" />
+    </RelativeLayout>
+
+</RelativeLayout>

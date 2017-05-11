@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/my_orderRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的订单"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_order_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/bg"
+        android:dividerHeight="5dp"
+        ptr:ptrShowIndicator="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/my_order_promptLin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/my_order_promptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="没有交易记录哦~"
+            android:textColor="@color/淡灰色"
+            android:gravity="center"
+            android:textSize="@dimen/中字体" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/my_order_promptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/my_order_promptText"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/no_order" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/ms_image"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ms_nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="商品名称"
+                android:textColor="@color/黑字体色"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ms_allLin"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格：¥"
+                    android:textColor="@color/淡红色"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ms_priceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="233"
+                    android:textColor="@color/淡红色"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ms_crowdfundingLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总需："
+                    android:textColor="@color/淡红色"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ms_crowdfundingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="233"
+                    android:textColor="@color/淡红色"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ms_rent_outLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租金："
+                    android:textColor="@color/淡红色"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ms_rent_out_rentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="233"
+                    android:textColor="@color/淡红色"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元/周"
+                    android:textColor="@color/淡红色"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ms_rent_out_tenancy_termText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="租期：12周"
+                    android:textColor="@color/淡灰色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ms_auctionLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成交价："
+                    android:textColor="@color/淡红色"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ms_auction_priceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="233"
+                    android:textColor="@color/淡红色"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/ms_auction_participationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="8人参与"
+                    android:textColor="@color/淡灰色"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ms_buyerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买家：xxxx"
+                android:textColor="@color/淡灰色"
+                android:textSize="12sp" />
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+            <TextView
+                android:id="@+id/ms_putawayTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上架时间：2016-01-15 03:12"
+                android:textColor="@color/淡灰色"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/ms_deliver_goods_stateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卖家已发货"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/中字体"
+                android:layout_alignParentRight="true" />
+            
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+            <TextView
+                android:id="@+id/ms_soldoutTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上架时间：2016-01-15 03:12"
+                android:textColor="@color/淡灰色"
+                android:textSize="12sp" />
+                      <TextView
+                android:id="@+id/ms_fill_in_informationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="填写物流信息"
+                android:textColor="@color/lanse"
+                android:textSize="@dimen/中字体"
+                android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg" />
+
+</LinearLayout>

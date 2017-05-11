@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/marginTen"
+    android:paddingLeft="@dimen/marginSixteen"
+    android:paddingRight="@dimen/marginSixteen"
+    android:paddingTop="@dimen/marginTen"
+    tools:context=".InventoryActivity" >
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/trash"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/trash" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_item_fort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/inventory_item_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/inventory_item_checkbox"
+                android:src="@drawable/inventory_heixianquan" />
+
+            <ImageView
+                android:id="@+id/inventory_item_image"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marginFive"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginFive"
+                android:layout_weight="2.5"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/inventory_item_goodsNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="商品名称与性质"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/中字体" />
+
+                <TextView
+                    android:id="@+id/inventory_item_describeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginOne"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="商品描述"
+                    android:textColor="@color/黑字体色"
+                    android:textSize="@dimen/小字体" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginOne"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/inventory_item_totalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginFive"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="总需9999人次，剩余"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/小字体" />
+
+                    <TextView
+                        android:id="@+id/inventory_item_residueText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginFive"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="1222"
+                        android:textColor="@color/lanse"
+                        android:textSize="@dimen/小字体" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginFive"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="人次"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/小字体" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginFive"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/marginFive"
+                        android:text="选择人次"
+                        android:textColor="@color/黑字体色"
+                        android:textSize="@dimen/小字体" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginSixteen"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/inventory_item_minusBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/left" />
+
+                        <EditText
+                            android:id="@+id/inventory_item_centerNumEd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/center"
+                            android:gravity="center"
+                            android:text="122"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/淡红色"
+                            android:textSize="@dimen/小字体" />
+
+                        <Button
+                            android:id="@+id/inventory_item_addBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/right" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/inventory_item_undefinedRel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/inventory_item_undefinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:button="@drawable/inventory_item_checkbox2" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

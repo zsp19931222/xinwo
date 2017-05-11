@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:id="@+id/identity_authentication_include1Lin"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/identity_test_bg1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/marginTen"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码："
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <EditText
+            android:id="@+id/identity_authentication_phoneNumEd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:textSize="@dimen/中字体" />
+
+        <LinearLayout
+            android:id="@+id/identity_authentication_phoneNumDeleteLin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/cha"
+                android:clickable="false"
+                android:focusable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp" >
+
+        <EditText
+            android:id="@+id/identity_authentication_verification_codeEd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="@dimen/中字体" />
+
+        <LinearLayout
+            android:id="@+id/identity_authentication_verification_codeDeleteLin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/cha"
+                android:clickable="false"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/identity_authentication_verification_codeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginSixteen"
+            android:text="获取验证码"
+            android:textColor="@color/淡红色"
+            android:textSize="@dimen/中字体" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg" />
+
+    <Button
+        android:id="@+id/identity_authentication_nextBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/publicbtn_selector_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

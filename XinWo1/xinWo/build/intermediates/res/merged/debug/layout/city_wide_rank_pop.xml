@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/半透明"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c" />
+    <RelativeLayout
+        android:id="@+id/city_wide_rank_pop_Rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/city_wide_rank_pop_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="综合排序"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体" />
+
+        <ImageView
+            android:id="@+id/city_wide_rank_pop_yesImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_yes_red"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/三c" />
+
+    <RelativeLayout
+        android:id="@+id/city_wide_rank_pop_Rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/city_wide_rank_pop_Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="价格从高到低"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体" />
+
+        <ImageView
+            android:id="@+id/city_wide_rank_pop_yesImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_yes_red"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/三c" />
+
+    <RelativeLayout
+        android:id="@+id/city_wide_rank_pop_Rel3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/city_wide_rank_pop_Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="价格从低到高"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体" />
+
+        <ImageView
+            android:id="@+id/city_wide_rank_pop_yesImage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_yes_red"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/三c" />
+
+    <RelativeLayout
+        android:id="@+id/city_wide_rank_pop_Rel4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/city_wide_rank_pop_Text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="卖家信用度排序"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体" />
+
+        <ImageView
+            android:id="@+id/city_wide_rank_pop_yesImage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_yes_red"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
+<RelativeLayout 
+    android:id="@+id/city_wide_rank_popRel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></RelativeLayout>
+</LinearLayout>

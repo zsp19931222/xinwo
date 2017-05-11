@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/discover_discoverRelative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/黑字体色"
+                android:textSize="16sp" />
+            <ImageView 
+                android:id="@+id/discover_discoverImage"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="45dp"
+                android:layout_height="1dp"
+                android:background="@color/黑字体色"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discover_auctionRelative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍卖"
+                android:textColor="@color/黑字体色"
+                android:textSize="16sp" />
+            <ImageView 
+                android:visibility="invisible"
+                android:id="@+id/discover_auctionImage"
+                android:layout_alignParentBottom="true"
+                android:layout_width="45dp"
+                android:layout_height="1dp"
+                android:background="@color/黑字体色"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:background="@color/bg"
+        android:id="@+id/discover_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        >
+    </FrameLayout>
+
+</LinearLayout>

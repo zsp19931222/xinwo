@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:id="@+id/hp_pd_item_image"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/bg" />
+
+    <com.quwu.xinwo.mywight.CircleImageView
+        android:id="@+id/hp_pd_item_CircleImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/hp_pd_item_image"
+        android:src="@drawable/a1" />
+<ImageView 
+   android:layout_below="@id/hp_pd_item_CircleImageView"
+    android:layout_width="1dp"
+    android:layout_height="5dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/bg"/>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="用户名"
+    android:layout_marginTop="10dp"
+    android:id="@+id/hp_pd_item_userNameText"
+    android:textColor="@color/lanse"
+    android:layout_marginLeft="10dp"
+    android:textSize="@dimen/超小字体"
+    android:layout_toRightOf="@id/hp_pd_item_CircleImageView"
+    />
+<TextView 
+    android:id="@+id/hp_pd_item_participationText1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="参与了"
+    android:layout_marginTop="5dp"
+    android:textSize="@dimen/巨小字体"
+    android:textColor="@color/黑字体色"
+    android:layout_below="@id/hp_pd_item_userNameText"
+    android:layout_alignLeft="@id/hp_pd_item_userNameText"
+    />
+<TextView 
+    android:id="@+id/hp_pd_item_participationText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1"
+    android:layout_marginTop="5dp"
+    android:textSize="@dimen/巨小字体"
+    android:textColor="@color/淡红色"
+    android:layout_below="@id/hp_pd_item_userNameText"
+    android:layout_toRightOf="@id/hp_pd_item_participationText1"
+    />
+<TextView 
+    android:id="@+id/hp_pd_item_participationText3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="人次\t2016-04-26\t21：55：19"
+    android:layout_marginTop="5dp"
+    android:textSize="@dimen/巨小字体"
+    android:textColor="@color/黑字体色"
+        android:layout_below="@id/hp_pd_item_userNameText"
+    android:layout_toRightOf="@id/hp_pd_item_participationText2"
+    />
+</RelativeLayout>

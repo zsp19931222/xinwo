@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:padding="5dp"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_margin="5dp"
+        android:gravity="center"
+          android:background="@drawable/area_now_bg_selector"
+        android:id="@+id/area_now_item_name"
+        android:textColor="@drawable/area_now_ziti_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全城"
+        android:textSize="16sp"/>
+
+</LinearLayout>

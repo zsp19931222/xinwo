@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
+        "source": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\xlistview_footer.xml",
+        "source": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\bundles\\debug\\res\\layout\\xlistview_footer.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\xlistview_header.xml",
+        "source": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\bundles\\debug\\res\\layout\\xlistview_header.xml"
+    },
+    {
+        "merged": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\listview_item.xml",
+        "source": "F:\\XinWo1\\swipeRefreshLoadListview\\build\\intermediates\\bundles\\debug\\res\\layout\\listview_item.xml"
+    }
+]

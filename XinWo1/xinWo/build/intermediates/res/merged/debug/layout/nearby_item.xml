@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:orientation="vertical" >
+    <ImageView 
+        android:id="@+id/nearby_item_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<TextView 
+    android:id="@+id/nearby_item_typeText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="手机"
+    android:layout_marginTop="5dp"
+    android:textColor="@color/黑字体色"
+    android:textSize="12sp"
+    />
+</LinearLayout>

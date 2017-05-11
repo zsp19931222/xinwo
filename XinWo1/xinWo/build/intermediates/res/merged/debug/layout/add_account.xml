@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/add_account_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加账户"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+     <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <TextView 
+            android:id="@+id/add_account_bankText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="银行卡账户"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="16dp"/>
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg"/>
+        <TextView 
+            android:id="@+id/add_account_alipayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付宝账号"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="16dp"/>
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg"/>
+    </LinearLayout>
+</LinearLayout>

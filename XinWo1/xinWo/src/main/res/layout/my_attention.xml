@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/my_attentionRel"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/returnbtn_selector_bg" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/returnbtn_bg"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的关注"
+                android:textColor="@color/黑字体色"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/三c" />
+
+        <me.maxwin.view.XListView
+            android:id="@+id/my_account_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp" >
+        </me.maxwin.view.XListView>
+    </LinearLayout>
+    <RelativeLayout 
+        android:visibility="gone"
+        android:id="@+id/my_attention_promptRel"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+        <TextView 
+    android:id="@+id/my_attention_promptText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textColor="@color/淡灰色"
+    android:textSize="@dimen/中字体"
+  android:gravity="center"
+        android:layout_centerInParent="true"
+    android:drawablePadding="10dp"
+    android:text="您还没有关注的商品哦~"
+    />
+<Button 
+    android:layout_marginBottom="10dp"
+    android:layout_above="@id/my_attention_promptText"
+    android:id="@+id/my_attention_promptBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/no_love"
+  android:layout_centerHorizontal="true"
+/>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:id="@+id/city_wide_classes_pop_item_Text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="123"
+    android:textSize="@dimen/中字体"
+    android:textColor="@color/黑字体色"/>
+</LinearLayout>

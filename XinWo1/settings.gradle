@@ -1,0 +1,5 @@
+include ':contactList'
+include ':pullToRefresh_Lib_XinWo'
+include ':swipeRefreshLoadListview'
+include ':weiboSDK'
+include ':xinWo'

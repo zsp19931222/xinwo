@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/goods_after_sale_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+             android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品售后"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp">
+    <ImageView 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/fii_goods_image"/>
+    <RelativeLayout 
+        android:layout_marginLeft="5dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+        <TextView 
+            android:id="@+id/fii_goods_nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textSize="@dimen/中字体"
+            android:textColor="@color/黑字体色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:layout_below="@id/fii_goods_nameText"
+            android:id="@+id/fii_goods_describeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品描述"
+            android:textSize="@dimen/超小字体"
+            android:textColor="@color/黑字体色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:layout_below="@id/fii_goods_describeText"
+            android:id="@+id/fii_goods_priceText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易金额："
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/小字体"
+            android:textColor="@color/黑字体色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView 
+            android:id="@+id/fii_goods_priceText2"
+            android:layout_alignBottom="@id/fii_goods_priceText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fii_goods_priceText1"
+            android:text="¥256"
+            android:textSize="@dimen/小字体"
+            android:textColor="@color/淡红色"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+</LinearLayout>
+<TextView 
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="16dp"
+    android:background="@color/white"
+    android:text="售后类型：退款"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/中字体"/>
+<TextView 
+    android:layout_marginTop="0.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="16dp"
+    android:background="@color/white"
+    android:text="退款原因：商品与描述不符"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/中字体"/>
+<TextView 
+    android:layout_marginTop="0.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="16dp"
+    android:background="@color/white"
+    android:text="退款金额：¥8888"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/中字体"/>
+<LinearLayout 
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情描述："
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/中字体"/>
+    <TextView 
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情描述"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/小字体"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+
+            <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/goods_after_sale_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:stretchMode="spacingWidthUniform" >
+            </com.quwu.xinwo.mywight.MyGridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/goods_after_disagreeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/account_btn_bg1"
+            android:padding="16dp"
+            android:text="拒绝退款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/中字体" />
+
+        <Button
+            android:id="@+id/goods_after_agreeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/account_btn_bg2"
+            android:padding="16dp"
+            android:text="同意退款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/中字体" />
+    </LinearLayout>
+</LinearLayout>

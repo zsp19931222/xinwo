@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <RelativeLayout
+            android:id="@+id/choiceness_returnRel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/returnbtn_selector_bg" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/returnbtn_bg"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="心窝精选"
+            android:textColor="@color/黑字体色"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/三c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/choiceness_crowdfundingLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/choiceness_crowdfundingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="众筹"
+                android:textColor="@color/淡红色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/choiceness_crowdfundingImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choiceness_allLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/choiceness_allText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="全价"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/choiceness_allImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choiceness_rent_outLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/choiceness_rent_outText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="出租"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/choiceness_rent_outImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choiceness_auctionLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/choiceness_auctionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="拍卖"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/choiceness_auctionImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/choiceness_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:divider="@color/bg"
+        android:dividerHeight="1dp"
+        ptr:ptrShowIndicator="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

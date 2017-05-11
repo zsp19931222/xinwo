@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    
+    <dimen name="巨大字体">20sp</dimen>
+    <dimen name="超大字体">18sp</dimen>
+    <dimen name="大字体">16sp</dimen>
+    <dimen name="中字体">14sp</dimen>
+    <dimen name="小字体">12sp</dimen>
+    <dimen name="超小字体">10sp</dimen>
+    <dimen name="巨小字体">8sp</dimen>
+    
+    <dimen name="marginSixteen">16dp</dimen>
+    <dimen name="marginFive">5dp</dimen>
+    <dimen name="marginTen">10dp</dimen>
+    <dimen name="marginOne">1dp</dimen>
+    
+    <dimen name="delete_action_len">90dip</dimen>
+</resources>

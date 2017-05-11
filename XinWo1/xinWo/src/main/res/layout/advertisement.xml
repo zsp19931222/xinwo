@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView 
+        android:id="@+id/advertisement_Image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+<TextView 
+    android:id="@+id/advertisement_Text"
+    android:layout_width="match_parent"
+    android:text="跳过：5S"
+    android:textSize="@dimen/大字体"
+    android:textColor="@color/white"
+    android:gravity="right"
+    android:padding="15dp"
+    android:background="@color/半透明"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>

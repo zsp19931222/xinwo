@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="title">#F59C9C</color>
+<color name="黑字体色">#323232</color>
+<color name="bg">#f2f2f2</color>
+<color name="bg1">#c3c3c3</color>
+<color name="淡灰色">#818181</color>
+<color name="white">#ffffff</color>
+<color name="red">#E85B5B</color>
+<!-- 柠檬绸色 -->
+    <color name="cornsilk">#fff8dc</color>
+<!-- 亮黄色 -->
+    <color name="yellow">#ffff00</color>
+    <color name="black">#000000</color>
+    <color name="淡黄色">#FBA973</color>
+    <color name="淡红色">#FC6570</color>
+    <color name="三c">#cccccc</color>
+    <color name="透明">#00000000</color>
+    <color name="半透明">#66000000</color>
+    <color name="橘色">#F9BCA2</color>
+    
+    <color name="lanse">#0091ff</color>
+    <color name="金黄色">#FEEC00</color>
+    <!-- 黑色 -->
+    <color name="transparent">#0000</color>
+     <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="inventory_titlebg">#F69C9C</color>
+     <color name="aree_ziti_selector">#69ca54</color>
+    <color name="aree_ziti">#000000</color>
+       <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="蓝色">#575EFF</color>
+    <color name="六六六">#666666</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="热门集市汇"
+        android:textColor="@color/黑字体色"
+        android:textSize="16sp" />
+
+    <com.quwu.xinwo.mywight.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/df1_gridview"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:numColumns="3" >
+    </com.quwu.xinwo.mywight.MyGridView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/三c" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="更多集市"
+        android:textColor="@color/黑字体色"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/三c" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="心窝新鲜货"
+        android:textColor="@color/黑字体色"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/三c" />
+
+    <com.quwu.xinwo.mywight.MyListView
+        android:id="@+id/df1_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/三c"
+        android:dividerHeight="0.5dp"
+        android:layout_marginBottom="15dp"
+        >
+    </com.quwu.xinwo.mywight.MyListView>
+
+</LinearLayout>

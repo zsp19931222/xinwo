@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/半透明"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/city_wide_screen_popLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/三c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp" >
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="正常使用"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="保修期内"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="无拆无修"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="全新商品"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp" >
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="来源京东"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="大陆行货"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+            <CheckBox
+                android:id="@+id/city_wide_screen_popBox7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/city_wide_screen_checkbox"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="可自提"
+                android:textColor="@drawable/city_wide_sereen_checkbox_ziti"
+                android:textSize="@dimen/小字体" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/三c" />
+
+        <com.quwu.xinwo.mywight.SeekBarPressure
+            android:id="@+id/seekBar_tg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+        </com.quwu.xinwo.mywight.SeekBarPressure>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/city_wide_screen_pop_resetBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_gray_btn_bg"
+                android:padding="10dp"
+                android:text="重置"
+                android:textSize="@dimen/大字体" />
+
+            <Button
+                android:id="@+id/city_wide_screen_pop_confirmBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_red_btn_bg"
+                android:padding="10dp"
+                android:text="确定"
+                android:textSize="@dimen/大字体" />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/city_wide_screen_popRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+</LinearLayout>

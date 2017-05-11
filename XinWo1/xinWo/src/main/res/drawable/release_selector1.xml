@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+         <item android:drawable="@drawable/fb_label_box_pre" android:state_checked="true" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/fb_label_box" android:state_checked="false" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/fb_label_box"></item>
+</selector>

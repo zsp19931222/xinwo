@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/pull_to_refresh_header_horizontal.xml" />
+        <ignore path="res/layout/pull_to_refresh_header_vertical.xml" />
+    </issue>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src/com/handmark/pulltorefresh/library/PullToRefreshBase.java" />
+    </issue>
+    <issue id="UselessParent" severity="ignore" />
+</lint>

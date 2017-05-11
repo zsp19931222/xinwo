@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c"/>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/personal_center_allLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/personal_center_allText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="全价"
+                android:textColor="@color/淡红色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/personal_center_allImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_center_crowdfundingLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/personal_center_crowdfundingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="出租"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/personal_center_crowdfundingImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_center_rent_outLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/personal_center_rent_outText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="免费送"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/personal_center_rent_outImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_center_auctionLin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/personal_center_auctionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="拍卖"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/personal_center_auctionImage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/淡红色"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+       <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/city_wide_classify_pop_Rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/city_wide_classify_pop_item_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="众筹"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/大字体" />
+
+        <ImageView
+            android:id="@+id/city_wide_classify_pop_item_yesImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_yes_red"
+            android:visibility="gone" />
+    </RelativeLayout>
+<ImageView
+    android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/三c" />
+</LinearLayout>

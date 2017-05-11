@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSixteen"
+        android:layout_marginRight="@dimen/marginSixteen"
+        android:layout_marginTop="@dimen/marginTen"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/manage_shipping_address_item_nameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收货人"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+            android:id="@+id/manage_shipping_address_item_phoneNumText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="122222"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/manage_shipping_address_item_areaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSixteen"
+        android:layout_marginRight="@dimen/marginSixteen"
+        android:layout_marginTop="@dimen/marginFive"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="122222"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/小字体" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/marginFive"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginTen"
+        android:layout_marginLeft="@dimen/marginSixteen"
+        android:layout_marginRight="@dimen/marginSixteen"
+        android:layout_marginTop="@dimen/marginTen"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/manage_shipping_address_item_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 设为默认地址"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体"
+            android:clickable="false"
+            android:focusable="false"
+            android:button="@drawable/inventory_item_xuanzhe"
+            android:src="@drawable/inventory_heixianquan" />
+
+
+        <TextView
+            android:id="@+id/manage_shipping_address_item_compileText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginFive"
+            android:layout_marginRight="@dimen/marginTen"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="编辑"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+             android:id="@+id/manage_shipping_address_item_deleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginFive"
+            android:gravity="right"
+            android:text="删除"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/中字体" />
+    </LinearLayout>
+
+</LinearLayout>

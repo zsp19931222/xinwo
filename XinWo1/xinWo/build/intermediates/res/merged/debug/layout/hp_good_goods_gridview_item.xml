@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="0.5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/hp_good_goods_gridview_item_Image"
+            android:layout_width="100dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/hp_good_goods_gridview_item_nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/黑字体色"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/hp_good_goods_gridview_item_describeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/超小字体" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="众筹进度"
+                android:textColor="@color/淡灰色"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/hp_good_goods_gridview_item_planText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lanse"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/hp_good_goods_gridview_item_Bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:progressDrawable="@drawable/colourful_progressbar" />
+    </LinearLayout>
+
+</LinearLayout>

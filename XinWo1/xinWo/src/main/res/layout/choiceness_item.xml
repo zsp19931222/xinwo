@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/white" >
+
+    <com.quwu.xinwo.mywight.CircleImageView
+        android:id="@+id/choiceness_item_head_portraitImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/a1" />
+
+    <TextView
+        android:id="@+id/choiceness_item_userNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/choiceness_item_head_portraitImage"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/choiceness_item_head_portraitImage"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/common_rank1"
+        android:text="用户名"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/小字体" />
+
+    <TextView
+        android:id="@+id/choiceness_item_time_areaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/choiceness_item_head_portraitImage"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/choiceness_item_head_portraitImage"
+        android:text="1个小时前\t\t重庆·渝北区"
+        android:textColor="@color/淡灰色"
+        android:textSize="@dimen/超小字体" />
+
+    <TextView
+        android:id="@+id/choiceness_item_now_priceText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/choiceness_item_userNameText"
+        android:text="2700"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/小字体" />
+
+    <TextView
+        android:id="@+id/choiceness_item_now_priceText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/choiceness_item_now_priceText1"
+        android:layout_toLeftOf="@id/choiceness_item_now_priceText1"
+        android:text="当前价：¥"
+        android:textColor="@color/淡红色"
+        android:textSize="@dimen/超小字体" />
+
+    <HorizontalScrollView
+        android:id="@+id/choiceness_item_hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choiceness_item_time_areaText"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+
+            <com.quwu.xinwo.mywight.MyGridView
+                android:id="@+id/choiceness_item_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:stretchMode="spacingWidthUniform" >
+            </com.quwu.xinwo.mywight.MyGridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/choiceness_item_goodsNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choiceness_item_hsv"
+        android:text="商品名称"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/大字体" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/choiceness_item_goodsDescribeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choiceness_item_goodsNameText"
+        android:text="商品描述"
+        android:textColor="@color/黑字体色"
+        android:textSize="@dimen/小字体" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+<TextView 
+    android:id="@+id/choiceness_item_participationText1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="12"
+    android:textColor="@color/lanse"
+    android:textSize="@dimen/超小字体"
+    android:layout_below="@id/choiceness_item_goodsDescribeText"
+    />
+<TextView 
+    android:id="@+id/choiceness_item_participationText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="人参与\t\t"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/超小字体"
+    android:layout_toRightOf="@id/choiceness_item_participationText1"
+    android:layout_alignBottom="@id/choiceness_item_participationText1"
+    />
+<TextView 
+    android:id="@+id/choiceness_item_delayedText1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="第"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/超小字体"
+    android:layout_toRightOf="@id/choiceness_item_participationText2"
+    android:layout_alignBottom="@id/choiceness_item_participationText2"
+    />
+<TextView 
+    android:id="@+id/choiceness_item_delayedText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3"
+    android:textColor="@color/lanse"
+    android:textSize="@dimen/超小字体"
+    android:layout_toRightOf="@id/choiceness_item_delayedText1"
+    android:layout_alignBottom="@id/choiceness_item_delayedText1"
+    />
+<TextView 
+    android:id="@+id/choiceness_item_delayedText3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="次延时"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/超小字体"
+    android:layout_toRightOf="@id/choiceness_item_delayedText2"
+    android:layout_alignBottom="@id/choiceness_item_delayedText2"
+    />
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="拍卖进行中"
+    android:textColor="@color/黑字体色"
+    android:textSize="@dimen/超小字体"
+    android:layout_alignParentRight="true"
+    android:layout_alignBottom="@id/choiceness_item_delayedText2"
+    />
+
+</RelativeLayout>

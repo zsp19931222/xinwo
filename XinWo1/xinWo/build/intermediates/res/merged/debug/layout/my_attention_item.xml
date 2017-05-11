@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp" >
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/my_attention_item_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/my_attention_item_ll_menu"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/my_attention_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取\n消\n关\n注"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+      <LinearLayout
+            android:id="@+id/inventory_item_fort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/my_attention_goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/my_attention_goods_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2.5" >
+
+        <TextView
+            android:id="@+id/my_attention_goodsNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="商品名称"
+            android:textColor="@color/黑字体色"
+            android:textSize="@dimen/中字体" />
+
+        <TextView
+            android:id="@+id/my_attention_goodsDescribeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_attention_goodsNameText"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="商品描述"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体" />
+
+        <LinearLayout
+            android:id="@+id/my_attention_allLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_attention_goodsDescribeText"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格：¥"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/超小字体" />
+
+            <TextView
+                android:id="@+id/my_attention_all_priceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="258"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/中字体" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_attention_crowd_fundingLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_attention_goodsDescribeText"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总需："
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/超小字体" />
+
+            <TextView
+                android:id="@+id/my_attention_crowd_funding_totalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="258"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/中字体" />
+
+            <TextView
+                android:id="@+id/my_attention_crowd_funding_residueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="剩余：53"
+                android:textColor="@color/淡灰色"
+                android:textSize="@dimen/超小字体" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_attention_rent_outLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_attention_goodsDescribeText"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租金："
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/超小字体" />
+
+            <TextView
+                android:id="@+id/my_attention_rent_out_priceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="258"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/中字体" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元/月"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/超小字体" />
+
+            <TextView
+                android:id="@+id/my_attention_rent_out_tenancy_termText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="租期：12月"
+                android:textColor="@color/淡灰色"
+                android:textSize="@dimen/超小字体" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_attention_auctionLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_attention_goodsDescribeText"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前价：¥"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/超小字体" />
+
+            <TextView
+                android:id="@+id/my_attention_auction_priceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="258"
+                android:textColor="@color/淡红色"
+                android:textSize="@dimen/中字体" />
+
+            <TextView
+                android:id="@+id/my_attention_auction_people_numText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="竞拍人数：12"
+                android:textColor="@color/淡灰色"
+                android:textSize="@dimen/超小字体" />
+        </LinearLayout>
+
+        <LinearLayout
+               android:visibility="invisible"
+            android:id="@+id/my_attention_freeLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_attention_goodsDescribeText"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/my_attention_freeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28人申请，正在等待卖家选择赠送用户~~"
+                android:textColor="@color/lanse"
+                android:textSize="@dimen/超小字体" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_attention_attentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:text="88人关注"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体" />
+
+        <TextView
+            android:id="@+id/my_attention_browseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/my_attention_attentionText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/my_attention_attentionText"
+            android:text="999+次浏览"
+            android:textColor="@color/淡灰色"
+            android:textSize="@dimen/超小字体" />
+    </RelativeLayout>
+    </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

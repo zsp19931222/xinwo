@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\XinWo1\contactList\src\main\assets"><file name="meituan_cities.db" path="F:\XinWo1\contactList\src\main\assets\meituan_cities.db"/></source><source path="F:\XinWo1\contactList\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="F:\XinWo1\contactList\src\release\assets"/></dataSet></merger>

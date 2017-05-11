@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mine_Lin"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/mine_bj"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/personal_center_returnRel"
+                android:layout_width="50dp"
+                android:layout_height="50dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/sp_return"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/personal_center_saleRel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:padding="5dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:text="卖二手"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/中字体" />
+            </RelativeLayout>
+
+            <com.quwu.xinwo.mywight.MarqueeText
+                android:id="@+id/personal_center_paomading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#559BA3A7"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t如果您发布的商品关注度达到999+可获得200现金喔！"
+                android:textColor="@color/黑字体色"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.quwu.xinwo.mywight.CircleImageView
+                android:id="@+id/mine_head_portraitBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/personal_head_portrait"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/personal_center_changeRel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/mine_head_portraitBtn"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icn_personal_pen"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/mine_user_nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="用户名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/中字体" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/common_rank1"
+                android:text="重庆|男"
+                android:textColor="@color/white"
+                android:textSize="@dimen/超小字体" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/mine_wowotounumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="是时候展示真正的技术了！"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/半透明"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/mine_releaseLin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="参与记录"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_saleLin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="收到的评价"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_attentionLin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/sesame_credit"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="芝麻信用  888分"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:text="交谈"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/巨小字体" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/personal_center_layout1"
+        layout="@layout/personal_center_layout" />
+
+    <com.quwu.xinwo.mywight.MyListView1
+        android:id="@+id/personal_center_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bg"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" />
+
+</LinearLayout>
